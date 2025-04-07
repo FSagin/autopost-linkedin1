@@ -63,11 +63,6 @@
         button:hover {
             background-color: #218838;
         }
-        .success-message {
-            display: none;
-            color: #28a745;
-            font-size: 18px;
-        }
     </style>
 </head>
 <body>
@@ -78,13 +73,12 @@
         
         <div class="form-container" id="form">
             <h2>Cadastre-se para acesso antecipado</h2>
-            <form name="lead-capture" method="POST" data-netlify="true" data-netlify-success=".success-message">
+            <form name="lead-capture" method="POST" data-netlify="true" data-netlify-success="/cadastro-concluido.html">
                 <input type="hidden" name="form-name" value="lead-capture">
                 <input type="text" name="nome" placeholder="Seu Nome" required>
                 <input type="email" name="email" placeholder="Seu E-mail" required>
                 <button type="submit">Quero Acesso</button>
             </form>
-            <p class="success-message">Cadastro concluído! Em breve enviaremos novidades para você! 🚀</p>
         </div>
     </div>
 </body>
